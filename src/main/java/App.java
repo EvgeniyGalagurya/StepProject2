@@ -40,7 +40,7 @@ public class App {
         handler.addServlet(new ServletHolder(new TestServlet()), "/test");
         handler.addServlet(new ServletHolder(new PeopleListServlet()), "/people");
 
-        handler.addServlet(new ServletHolder(new UsersPageServlet()), "");
+        handler.addServlet(new ServletHolder(new UsersPageServlet()), "/");
         handler.addServlet(new ServletHolder(new ChatPageServlet()), "/messages/{id}");
         handler.addServlet(new ServletHolder(new LoginFormServlet()), "/login");
         handler.addServlet(new ServletHolder(new LikePageServlet()), "/liked");
